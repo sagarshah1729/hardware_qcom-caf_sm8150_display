@@ -8,10 +8,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    gralloc.$(TARGET_BOARD_PLATFORM) \
-    lights.$(TARGET_BOARD_PLATFORM) \
-    hwcomposer.$(TARGET_BOARD_PLATFORM) \
-    memtrack.$(TARGET_BOARD_PLATFORM) \
+    gralloc.$(PRODUCT_BOARD_PLATFORM) \
+    lights.$(PRODUCT_BOARD_PLATFORM) \
+    hwcomposer.$(PRODUCT_BOARD_PLATFORM) \
+    memtrack.$(PRODUCT_BOARD_PLATFORM) \
     libqdMetaData.vendor \
     libdisplayconfig.vendor \
     vendor.display.config@1.0.vendor \
@@ -95,7 +95,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_ui_3d_tonemap=1
 
 #Set WCG properties
-ifeq ($(TARGET_BOARD_PLATFORM), sm8150)
+ifeq ($(PRODUCT_BOARD_PLATFORM), sm8150)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_wide_color_display=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_HDR_display=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true

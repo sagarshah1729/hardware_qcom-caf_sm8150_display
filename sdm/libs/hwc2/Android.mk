@@ -4,7 +4,7 @@ include $(LOCAL_PATH)/../../../common.mk
 
 ifeq ($(use_hwc2),true)
 
-LOCAL_MODULE                  := hwcomposer.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE                  := hwcomposer.$(PRODUCT_BOARD_PLATFORM)
 LOCAL_VENDOR_MODULE           := true
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE_TAGS             := optional
